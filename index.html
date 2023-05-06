@@ -1,1 +1,570 @@
-hello world
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 bg-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Mr.Białek</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link hover-underline-animation" href="#page-top">Strona
+                            Główna</a></li>
+                    <li class="nav-item"><a class="nav-link hover-underline-animation" href="#rasykotow">Rasy kotów</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link hover-underline-animation" href="#gadzetydlakotow">Gadżety
+                            dla kotów</a></li>
+                    <li class="nav-item"><a class="nav-link hover-underline-animation"
+                            href="#aktualnosci">Aktualności</a></li>
+                    <li class="nav-item"><a class="nav-link hover-underline-animation" href="#contact">Porady</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 h-100">
+            <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
+                <div class="col-lg-8 align-self-end">
+                    <h1 class="text-black font-weight-bold fade-in">Witaj w miejscu w którym pokochasz koty
+                    </h1>
+                    <hr class="divider" />
+                </div>
+                <div class="col-lg-8 align-self-baseline">
+                    <p class="text-black-75 mb-5 fade-in" style="opacity: 0;">Strona została wykonana w ramach projektu
+                        zaliczeniowego przez autora
+                        "Michał Białek" zastrzegam sobie wszekle prawa do rozpowrzechniania treści strony</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-section" id="rasykotow" style="padding: 50px;">
+        <h2 class="text-center">Lista z rasą kotów</h2>
+        <hr class="divider" />
+        <br />
+        <input class="form-control" id="myInput" type="text" placeholder="Wpisz rasę, której szukasz...">
+        <br>
+        <ul class="list-group" id="myList">
+            <li class="list-group-item">Europejski</li>
+            <li class="list-group-item">Brytyjski</li>
+            <li class="list-group-item">Maine Coon</li>
+            <li class="list-group-item">Perski</li>
+            <li class="list-group-item">Rosyjski niebieski</li>
+            <li class="list-group-item">Syjamski</li>
+            <li class="list-group-item">Norweski leśny</li>
+            <li class="list-group-item">Syberyjski</li>
+            <li class="list-group-item">Sfinks</li>
+            <li class="list-group-item">Ragdoll</li>
+        </ul>
+    </section>
+
+
+    <!-- Gadżety-->
+    <section class="page-section" id="gadzetydlakotow">
+        <div class="container px-4 px-lg-5 mb-5">
+            <h2 class="text-center mt-5">Gadżety dla kotów</h2>
+            <hr class="divider" />
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="modal" data-target="#shop1"
+                    id="gadzetydlakotowSection">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Zabawki</h3>
+                        <p class="text-muted mb-0">Zapewnij swojemu pupilowi masę wrarzeń z ekstra zabawkami!</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="modal" data-target="#shop2"
+                    id="gadzetydlakotowSection">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Odrzywki</h3>
+                        <p class="text-muted mb-0">Zadbaj o świerzą śierść swojego futrzaka...</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="modal" data-target="#shop3"
+                    id="gadzetydlakotowSection">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Karmy</h3>
+                        <p class="text-muted mb-0">Niech twój przyjaciel cieszy się pełnią życia z najlepszą karmą...
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center" data-toggle="modal" data-target="#shop4"
+                    id="gadzetydlakotowSection">
+                    <div class="mt-5">
+                        <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                        <h3 class="h4 mb-2">Akcesoria</h3>
+                        <p class="text-muted mb-0">Zrób sobie prezent lub swojemu kociemu znajomemu...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <br><br><br>
+    <!--aktualnosci-->
+    <div id="aktualnosci">
+        <div class="container mb-5">
+            <div class="row">
+                <h2 class="text-center mt-5">Aktualności</h2>
+                <hr class="divider" />
+                <br>
+                <div class="col-md-4 col-sm-6 text-center">
+                    <figure class="figure akt" data-toggle="modal" data-target="#art1">
+                        <img src="persNews.png" class="figure-img img-fluid rounded" alt="Opis zdjęcia"
+                            style="height: 200px; width: 300px;" />
+                        <figcaption class="figure-caption">O tym gadżecie mówił sam Elon Musk w projekcie Space X...
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center zoom">
+                    <figure class="figure akt" data-toggle="modal" data-target="#art2">
+                        <img src="catSite.png" class="figure-img img-fluid rounded" alt="Opis zdjęcia"
+                            style="height: 200px; width: 300px;">
+                        <figcaption class="figure-caption">świat kotów to powrzechnie znane pojecie. My staramy...
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-4 col-sm-6 text-center zoom">
+                    <figure class="figure akt" data-toggle="modal" data-target="#art3">
+                        <img src="Persian-cat.jpg" class="figure-img img-fluid rounded" alt="Opis zdjęcia"
+                            style="height: 200px; width: 300px;">
+                        <figcaption class="figure-caption">To już dzisiaj. Ruszyła nowa strona !</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal art1 -->
+    <div class="modal fade" id="art1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="akt1ModalTitle">Elon Musk & Cats</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Elon Musk, znany przedsiębiorca i założyciel takich firm jak SpaceX czy Tesla, zawsze zadziwia
+                        innowacyjnymi pomysłami i technologiami. Ostatnio na jednej z konferencji prasowych
+                        zapowiedział, że w projekcie SpaceX zostanie zaprezentowany całkowicie nowy gadżet - dla kotów!
+
+                        Czym dokładnie jest ten niezwykły gadżet? Elon Musk zdradził niewiele informacji na jego temat,
+                        ale na podstawie kilku wskazówek można przypuszczać, że będzie to nie tylko zabawka dla naszych
+                        kocich pupilów, ale również narzędzie naukowe, które pomoże w badaniach przeprowadzanych przez
+                        SpaceX.
+
+                        Jedną z informacji, które Musk ujawnił, jest to, że gadżet zostanie wyprodukowany z
+                        wykorzystaniem materiałów, które są stosowane w przemyśle kosmicznym. Będzie to zapewne
+                        oznaczało, że jest on bardzo lekki, a jednocześnie wytrzymały, co będzie niezwykle ważne, jeśli
+                        zostanie wykorzystany na pokładzie statków kosmicznych.
+
+                        Inną informacją, którą Musk podał, jest to, że urządzenie zostanie wyposażone w zaawansowane
+                        sensory, które będą w stanie mierzyć różne parametry, takie jak temperatura czy poziom tlenu.
+                        Dzięki temu naukowcy będą mogli na bieżąco monitorować zdrowie i samopoczucie kota w trakcie
+                        lotu kosmicznego.
+
+                        Co więcej, gadżet ma być w pełni interaktywny, co oznacza, że będzie reagował na ruchy kota, co
+                        z pewnością dostarczy wiele frajdy nie tylko naszym kocim przyjaciołom, ale także ludziom,
+                        którzy będą mieli okazję go obserwować.
+
+                        Nie wiadomo jeszcze, kiedy dokładnie zostanie zaprezentowany ten niezwykły gadżet, ale już teraz
+                        budzi on wiele zainteresowania i emocji wśród miłośników nauki, kosmosu i oczywiście kotów. Czy
+                        uda się spełnić oczekiwania związane z tym urządzeniem? Przekonamy się już niedługo.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal art2 -->
+    <div class="modal fade" id="art2" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="akt1ModalTitle">Świat Kotów</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Świat kotów to powszechnie znane pojęcie. To one rządzą domami i często wydają się być nie do
+                        pokonania. Kto z nas nie uległ urokowi kociej urody i gracji?
+
+                        W ostatnim czasie coraz większą popularnością cieszą się gadżety dla naszych futerkowych
+                        przyjaciół. Jednym z takich produktów jest rewolucyjne drzewko dla kotów, o którym mówił sam
+                        Elon Musk w projekcie Space X.
+
+                        Drzewko to składa się z kilku poziomów, które umożliwiają kotom drapanie, skakanie i zabawę.
+                        Jest to idealne rozwiązanie dla tych, którzy nie mają możliwości umieszczenia drapaka na ścianie
+                        lub chcą wzbogacić aranżację swojego domu.
+
+                        Innowacyjne rozwiązania zastosowane w drzewku to między innymi modułowa konstrukcja, którą można
+                        dowolnie rozbudowywać i dostosowywać do potrzeb kotów. Dodatkowo, drzewko jest wykonane z
+                        materiałów najwyższej jakości, dzięki czemu jest wytrzymałe i trwałe.
+
+                        Drzewko dla kotów oprócz funkcjonalności, wyróżnia się także swoim nowoczesnym designem, który
+                        idealnie wpisuje się w trendy aranżacyjne. Dostępne są różne kolory i wzory, co pozwala na
+                        dopasowanie produktu do stylu domu.
+
+                        Świat kotów to fascynujące miejsce, w którym każdy właściciel może znaleźć coś dla swojego
+                        futrzaka. Drzewko dla kotów to jedno z najlepszych rozwiązań dla tych, którzy chcą zapewnić
+                        swojemu pupilowi odpowiednią aktywność i zabawę, jednocześnie dbając o wygląd swojego domu.
+
+                        Jeśli jesteś miłośnikiem kotów i chcesz zapewnić swojemu pupilowi coś wyjątkowego, zainwestuj w
+                        drzewko dla kotów. To produkt, o którym mówił sam Elon Musk w projekcie Space X, który z
+                        pewnością spełni oczekiwania zarówno kotów, jak i ich właścicieli.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal art3 -->
+    <div class="modal fade" id="art3" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="akt1ModalTitle">Nasza nowa strona!</h5>
+                </div>
+                <div class="modal-body">
+                    <p>Cześć wszystkim miłośnikom kotów!
+
+                        Mamy dla Was wspaniałą nowinę - powstała nowa strona internetowa, dedykowana wyłącznie naszym
+                        futrzanym przyjaciołom! Na stronie znajdziecie wiele przydatnych informacji na temat opieki nad
+                        kotami oraz wiele ciekawych artykułów związanych z życiem kociego gatunku.
+
+                        Nie tylko to, na stronie znajdziecie również szeroki wybór produktów dla Waszych pupili -
+                        począwszy od pysznej karmy, przez zabawki, aż do wygodnych legowisk i drapaków. Zadbaliśmy o to,
+                        aby oferować jedynie najlepsze produkty, które spełnią oczekiwania zarówno Was, jak i Waszych
+                        kotów.
+
+                        Dodatkowo, na naszej stronie znajdziecie także sekcję "Porady", gdzie specjaliści
+                        odpowiadają na Wasze pytania i udzielają fachowych porad. Dzięki temu, będziecie mieć pewność,
+                        że Wasze koty otrzymają najlepszą możliwą opiekę.
+
+                        Zapraszamy serdecznie do odwiedzenia naszej strony i przekonania się sami, co przygotowaliśmy
+                        dla Was i Waszych czworonożnych przyjaciół. Bądźcie na bieżąco z naszymi nowościami oraz
+                        promocjami, które dla Was przygotowujemy.
+
+                        Świat kotów to wspaniałe miejsce, a my z przyjemnością pomagamy Wam w dbaniu o Waszych
+                        futrzanych przyjaciół.
+
+                        Do zobaczenia na naszej stronie!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- porady -->
+    <section class="page-section" id="contact">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-5">Napisz do nas!</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Skontaktuj się z nami a postaramy się pomóc w jak najbardziej możliwy
+                        sposób !!!</p>
+                </div>
+            </div>
+            <div class="container px-5 my-5">
+                <form id="contactForm" data-sb-form-api-token="5d6b4fd4-d407-40db-a3b8-e8460e49a166">
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="imieINazwisko" type="text" placeholder="Imie i Nazwisko"
+                            data-sb-validations="required" />
+                        <label for="imieINazwisko">Imie i Nazwisko</label>
+                        <div class="invalid-feedback" data-sb-feedback="imieINazwisko:required">Imie i Nazwisko is
+                            required.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="adresEamil" type="email" placeholder="Adres eamil "
+                            data-sb-validations="required,email" />
+                        <label for="adresEamil">Adres eamil </label>
+                        <div class="invalid-feedback" data-sb-feedback="adresEamil:required">Adres eamil is required.
+                        </div>
+                        <div class="invalid-feedback" data-sb-feedback="adresEamil:email">Adres eamil Email is not
+                            valid.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control" id="numerTelefonu" type="text" placeholder="Numer telefonu"
+                            data-sb-validations="required" />
+                        <label for="numerTelefonu">Numer telefonu</label>
+                        <div class="invalid-feedback" data-sb-feedback="numerTelefonu:required">Numer telefonu is
+                            required.</div>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <textarea class="form-control" id="wiadmomosc" type="text" placeholder="Wiadmomość "
+                            style="height: 10rem;" data-sb-validations="required"></textarea>
+                        <label for="wiadmomosc">Wiadmomość </label>
+                        <div class="invalid-feedback" data-sb-feedback="wiadmomosc:required">Wiadmomość is required.
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3">
+                            <div class="fw-bolder">Formularz został wysłany poprawnie.</div>
+                            <h2>Dziękujemy</h2>
+                            <p> Postaramy się odpowiedzieć tak szybko jak to możliwe</p>
+                        </div>
+                    </div>
+                    <div class="d-none" id="submitErrorMessage">
+                        <div class="text-center text-danger mb-3">Error sending message!</div>
+                    </div>
+                    <div class="d-grid">
+                        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+            <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+            <!-- <div class="page-section">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4 mx-auto">
+                      <div class="bg-image position-relative">
+                        <img src="catSite.png" class="img-fluid w-100 rounded" alt="Sample" style="object-fit: cover;">
+                        <div class="mask position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center">
+                          <p class="text-white mb-0">Hello</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+
+
+            <!-- shop modal zabawki-->
+            <div class="modal fade modal-lg" id="shop1" role="dialog" aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="ballToShop.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Piłka zabawka do wspólnej lub
+                                                samodzielnej zabawy. Pokochaj produkt!
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="drapak.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Relaksacyjny drapak dla kota. Polecany przez ekspertów
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="mouseLaser.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Zabawkowa mysz z laserem. Do wspólnej spędzonego czasu
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shop modal odrzywki-->
+            <div class="modal fade modal-lg" id="shop2" role="dialog" aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="odrzywka1.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Antybakteryjne chusteczki do czyszczenia
+                                                wrażliwych miejsc zwierzą
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="odrzywka2.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Okrągłe łagodzące płatki do pielęgnacji
+                                                oczu u kotów
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="odrzywka3.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Emulsja do pielęgnacji oczu Versele-Laga
+                                                Oropharma Eye Care
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shop modal karmy-->
+            <div class="modal fade modal-lg" id="shop3" role="dialog" aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="karma1.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption"> Dla specjalnych potrzeb kotów perskich:
+                                                Wspiera zdrową skórę i piękną sierść, minimalizuje powstawanie kłaczków
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="karma2.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Zbilansowana karma sucha dla kotów
+                                                perskich, minimalizuje powstawanie kul włosowych,z cennymi kwasami
+                                                tłuszczowymi
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="karma3.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Karma sucha dla dorastających kociąt
+                                                persów od 4. do 12. miesiąca, z wyszukaną recepturą
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- shop modal akcesoria-->
+            <div class="modal fade modal-lg" id="shop4" role="dialog" aria-labelledby="exampleModalLongTitle"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">X</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container">
+                                <div class="row justify-content-center">
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="akcesoria1.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption"> Roztwór o działaniu antystresowym, dla
+                                                kotów, syntetyczny feromon dobrego samopoczucia,
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="akcesoria2.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Antystresowy waporyzator dla kotów w
+                                                każdym wieku, pomocny przy lękach i stresie,
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+
+                                    <div class="col-md-3 shopInModal">
+                                        <figure class="figure">
+                                            <img src="akcesoria3.jpg" class="figure-img img-fluid rounded"
+                                                alt="Opis zdjęcia" style="height: 100px;" />
+                                            <figcaption class="figure-caption">Dyfuzor do podłączenia do kontaktu z
+                                                kocimiętką, dla dobrego współżycia kotów, 100% naturalny
+                                            </figcaption>
+                                        </figure>
+                                        <button class="btn btn-primary mt-auto">KUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+                crossorigin="anonymous"></script>
+            <script>
+                $(document).ready(function () {
+                    $("#myInput").on("keyup", function () {
+                        var value = $(this).val().toLowerCase();
+                        $("#myList li").filter(function () {
+                            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                        });
+                    });
+                });
+            </script>
+
+            <!-- Bootstrap JS -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

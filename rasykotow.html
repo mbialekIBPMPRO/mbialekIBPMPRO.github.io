@@ -1,0 +1,69 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="#page-top">Mr.Białek</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Strona Główna</a></li>
+                    <li class="nav-item"><a class="nav-link" href="rasykotow.html">Rasy kotów</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gadzetydlakotow.html">Gadżety dla kotów</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aktualnosci.html">Aktualności</a></li>
+                    <li class="nav-item"><a class="nav-link" href="porady.html">Porady</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section" id="services">
+        <h2>Lista z rasą kotów</h2>
+        <p>Wpisz rasę, której szukasz:</p>
+        <input class="form-control" id="myInput" type="text" placeholder="Search..">
+        <br>
+        <ul class="list-group" id="myList">
+            <li class="list-group-item">Europejski</li>
+            <li class="list-group-item">Brytyjski</li>
+            <li class="list-group-item">Maine Coon</li>
+            <li class="list-group-item">Perski</li>
+            <li class="list-group-item">Rosyjski niebieski</li>
+            <li class="list-group-item">Syjamski</li>
+            <li class="list-group-item">Norweski leśny</li>
+            <li class="list-group-item">Syberyjski</li>
+            <li class="list-group-item">Sfinks</li>
+            <li class="list-group-item">Ragdoll</li>
+        </ul>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#myInput").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#myList li").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
